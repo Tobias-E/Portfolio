@@ -18,99 +18,38 @@ const Skills = () => {
 			}
 		}
 	`);
+
+	function findImg(i) {
+		return data.allImageSharp.nodes.find((e) => {
+			return e.fluid.src.split('/').pop().split('.').shift() === i;
+		}).fluid;
+	}
+
 	return (
 		<Section id={'skills'}>
 			<Container>
+				<Badge fluid={findImg('html5')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('css3')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('javascript')} objectFit={'cover'} padding={'0'} />
+				<Badge fluid={findImg('typescript')} objectFit={'cover'} padding={'0'} />
+				<Badge fluid={findImg('sass')} objectFit={'contain'} padding={'0.7rem'} />
+				<Badge fluid={findImg('tailwind')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('react')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('react-hooks')} objectFit={'cover'} padding={'0'} />
+				<Badge fluid={findImg('gatsby')} objectFit={'contain'} padding={'0'} />
+				<Badge fluid={findImg('gulp')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('jamstack')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('git')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('npm')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('nodejs')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('graphql')} objectFit={'contain'} padding={'0.5rem'} />
+				<Badge fluid={findImg('firebase')} objectFit={'contain'} padding={'0.5rem'} />
 				<Badge
-					fluid={data.allImageSharp.nodes[8].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[0].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[12].fluid}
-					objectFit={'cover'}
-					padding={'0'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[9].fluid}
-					objectFit={'cover'}
-					padding={'0'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[15].fluid}
-					objectFit={'contain'}
-					padding={'0.7rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[16].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[14].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[17].fluid}
-					objectFit={'cover'}
-					padding={'0'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[3].fluid}
-					objectFit={'contain'}
-					padding={'0'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[4].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[10].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[6].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[13].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[7].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[5].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[2].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[1].fluid}
+					fluid={findImg('contentful')}
 					objectFit={'contain'}
 					padding={'0.5rem 0.8rem 0.5rem 0.2rem'}
 				/>
-				<Badge
-					fluid={data.allImageSharp.nodes[11].fluid}
-					objectFit={'contain'}
-					padding={'0.5rem'}
-				/>
+				<Badge fluid={findImg('netlify')} objectFit={'contain'} padding={'0.5rem'} />
 			</Container>
 		</Section>
 	);
