@@ -7,7 +7,9 @@ import React from 'react';
 import App from '../components/App';
 
 const IndexPage = () => (
-	<App></App>
+	<React.Suspense fallback={<h1>Loading...</h1>}>
+		<App />
+	</React.Suspense>
 	/*  <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
