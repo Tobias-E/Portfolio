@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 
 // import Layout from '../components/layout';
 // import Image from '../components/image';
@@ -7,9 +6,7 @@ import React from 'react';
 import App from '../components/App';
 
 const IndexPage = () => (
-	<React.Suspense fallback={<h1>Loading...</h1>}>
-		<App />
-	</React.Suspense>
+	<App />
 	/*  <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>

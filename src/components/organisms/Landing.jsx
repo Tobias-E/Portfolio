@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
 import { theme } from '../utils';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const Landing = () => {
 	const data = useStaticQuery(graphql`
@@ -30,9 +28,7 @@ const Landing = () => {
 					with creative solutions.
 				</P>
 				<a href='#skills'>
-					<Button>
-						Learn More About Me <Icon icon={faArrowDown} />
-					</Button>
+					<Button>Learn More About Me &nabla;</Button>
 				</a>
 			</Section>
 		</Background>
@@ -95,10 +91,6 @@ const Button = styled.button`
 		margin: 2rem 0;
 		font-size: 1rem;
 	}
-`;
-
-const Icon = styled(FontAwesomeIcon)`
-	margin-left: 0.5rem;
 `;
 
 export default Landing;
