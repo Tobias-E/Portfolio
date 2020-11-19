@@ -1,14 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import { normalize, fontFace } from 'polished';
-// import { primaryFont } from './typography';
-import Roboto from '../../fonts/Roboto-Regular.ttf';
+import { normalize } from 'polished';
 
 export const GlobalStyle = createGlobalStyle`
     ${normalize}
-    ${fontFace({
-		fontFamily: 'Roboto',
-		fontFilePath: Roboto,
-	})}
+
     html{
         font-size: 16px;
         box-sizing: border-box;
@@ -21,6 +16,6 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         margin: 0;
-        font-family: Roboto;
+        font-family: 'Roboto';
     }
 `;
