@@ -1,14 +1,3 @@
-/* import { fontFace } from 'polished';
-
-export const primaryFont = 'Roboto';
-
-export const primaryFont = {
-	...fontFace({
-		fontFamily: 'Roboto',
-		fontFilePath: '/src/fonts/Roboto-Regular.ttf',
-	}),
-}; */
-
 export const typeScale = {
 	header1: '1.8rem',
 	header2: '1.6rem',

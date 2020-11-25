@@ -28,7 +28,7 @@ const Landing = () => {
 					with creative solutions.
 				</P>
 				<a href='#skills'>
-					<Button>Learn More About Me &nabla;</Button>
+					<Button>Learn More</Button>
 				</a>
 			</Section>
 		</Background>
