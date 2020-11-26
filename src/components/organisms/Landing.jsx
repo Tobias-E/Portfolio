@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
@@ -35,6 +35,11 @@ const Landing = () => {
 	);
 };
 
+const introAnimation = keyframes`
+	0% { opacity: 0; padding-top: 12rem; }
+	100% { opacity: 1; padding-top: 0; }
+`;
+
 const Background = styled(BackgroundImage)`
 	height: 100vh;
 	padding: 0;
@@ -52,11 +57,15 @@ const Section = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	animation-name: ${introAnimation};
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
 `;
 
 const Name = styled.h1`
 	color: ${theme.white};
-	font-size: 2rem;
+	font-size: 2.3rem;
 	font-weight: 400;
 	padding-top: 4rem;
 `;
