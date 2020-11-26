@@ -81,7 +81,7 @@ const Heading = styled.h2`
 const P = styled.p`
 	color: ${theme.white};
 	font-size: 1.2rem;
-	margin-top: 2rem;
+	margin: 2rem 0 4rem 0;
 	text-align: center;
 `;
 
@@ -91,8 +91,12 @@ const Button = styled.button`
 	border: 1px solid ${theme.white};
 	border-radius: 7px;
 	padding: 0.7rem 1rem;
-	margin-top: 2rem;
 	font-size: 1.2rem;
+	:hover {
+		color: ${theme.red};
+		border: 1px solid ${theme.red};
+		cursor: pointer;
+	}
 	:focus {
 		outline: none;
 	}

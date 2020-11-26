@@ -39,7 +39,7 @@ const Work = () => {
 							<BtnLeft href='https://github.com/Tobias-E/Portfolio'>
 								Source Code
 							</BtnLeft>
-							<BtnRight href='https://google.com'>View Website</BtnRight>
+							<BtnRight href='https://eskou.dev'>View Website</BtnRight>
 						</BtnContainer>
 					</ContentContainer>
 				</Article>
