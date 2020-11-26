@@ -4,16 +4,19 @@ import Img from 'gatsby-image';
 
 // Imported components
 import { theme } from '../utils';
+import Tooltip from '../atoms/Tooltip';
 
-const Badge = ({ fluid, objectFit, padding }) => {
+const Badge = ({ fluid, objectFit, padding, content }) => {
 	return (
-		<Image
-			fluid={fluid}
-			imgStyle={{
-				objectFit: `${objectFit}`,
-				padding: `${padding}`,
-			}}
-		/>
+		<Tooltip content={content}>
+			<Image
+				fluid={fluid}
+				imgStyle={{
+					objectFit: `${objectFit}`,
+					padding: `${padding}`,
+				}}
+			/>
+		</Tooltip>
 	);
 };
 
